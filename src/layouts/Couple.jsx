@@ -24,7 +24,7 @@ function Couple() {
               alt="Chú rể"
               src={groomUrl}
               sx={{ width: 180, height: 180 }}
-              className="border-4 border-double border-gray-700 border-blue-400 shadow-md"
+              className="border-4 border-double border-gray-700 border-blue-200 shadow-md"
             />
             <div>
               Người con trai dễ thương, chăm chỉ. Ưu điểm là biết sợ vợ.
@@ -46,7 +46,7 @@ function Couple() {
               alt="Cô dâu"
               src={brideUrl}
               sx={{ width: 180, height: 180 }}
-              className="border-4 border-double border-gray-700 border-pink-300 shadow-md"
+              className="border-4 border-double border-gray-700 border-pink-200 shadow-md"
             />
             <div>
               Người phụ nữ hiền dịu, biết thấu hiểu. Ưu điểm ăn nhiều nhưng
