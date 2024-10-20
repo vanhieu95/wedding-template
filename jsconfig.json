@@ -8,6 +8,9 @@
       "@assets": [
         "./src/assets/*"
       ],
+      "@data": [
+        "./src/data/*"
+      ],
       "@utils": [
         "./src/utils/*"
       ],

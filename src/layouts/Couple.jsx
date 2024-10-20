@@ -16,7 +16,7 @@ function Couple() {
         </h3>
         <Paper
           elevation={24}
-          className="p-4 max-w-md border-4 border-solid border-blue-300"
+          className="p-4 max-w-md border-4 border-solid border-gray-800"
           square={false}
         >
           <Stack direction="row-reverse" spacing={2} alignItems={'center'}>
@@ -24,7 +24,7 @@ function Couple() {
               alt="Chú rể"
               src={groomUrl}
               sx={{ width: 180, height: 180 }}
-              className="border-4 border-double border-gray-700 border-blue-200 shadow-md"
+              className="border-4 border-double border-gray-700 border-black shadow-md"
             />
             <div>
               Người con trai dễ thương, chăm chỉ. Ưu điểm là biết sợ vợ.

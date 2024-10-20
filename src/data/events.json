@@ -1,0 +1,37 @@
+{
+  "stickyImageUrl": "hero-image.jpg",
+  "events": [
+    {
+      "imageUrl": "hero-image.jpg",
+      "title": "Lễ cưới nhà gái",
+      "date": "09/11/2024",
+      "time": "11:30",
+      "place": "Tại tư gia",
+      "location": "pb=!1m18!1m12!1m3!1d3919.151516713712!2d106.6742172!3d10.799705099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292843bf6767%3A0x51c99afc9e2323eb!2zV2hpdGUgUGFsYWNlLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1729432907473!5m2!1sen!2s"
+    },
+    {
+      "imageUrl": "hero-image.jpg",
+      "title": "Lễ vu quy",
+      "date": "09/11/2024",
+      "time": "18:30",
+      "place": "Nhà hàng White Palace",
+      "location": "pb=!1m18!1m12!1m3!1d3919.151516713712!2d106.6742172!3d10.799705099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292843bf6767%3A0x51c99afc9e2323eb!2zV2hpdGUgUGFsYWNlLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1729432907473!5m2!1sen!2s"
+    },
+    {
+      "imageUrl": "hero-image.jpg",
+      "title": "Lễ cưới nhà trai",
+      "date": "24/11/2024",
+      "time": "11:30",
+      "place": "Tại tư gia",
+      "location": "pb=!1m18!1m12!1m3!1d3919.151516713712!2d106.6742172!3d10.799705099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292843bf6767%3A0x51c99afc9e2323eb!2zV2hpdGUgUGFsYWNlLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1729432907473!5m2!1sen!2s"
+    },
+    {
+      "imageUrl": "hero-image.jpg",
+      "title": "Lễ thành hôn",
+      "date": "24/11/2024",
+      "time": "18:30",
+      "place": "Nhà hàng Phúc Hồng",
+      "location": "pb=!1m18!1m12!1m3!1d3919.151516713712!2d106.6742172!3d10.799705099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292843bf6767%3A0x51c99afc9e2323eb!2zV2hpdGUgUGFsYWNlLCBQaMO6IE5odeG6rW4sIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1sen!2s!4v1729432907473!5m2!1sen!2s"
+    }
+  ]
+}
