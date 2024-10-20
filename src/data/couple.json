@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nguyễn Lương Trung Hiếu",
+    "description": "Người con trai dễ thương, chăm chỉ. Ưu điểm là biết sợ vợ.",
+    "role": "Chú rể",
+    "image": "couple/groom.jpg",
+    "position": "start",
+    "color": "black",
+    "borderColor": "black"
+  },
+  {
+    "name": "Nguyễn Thị Thúy Vân",
+    "description": "Người phụ nữ hiền dịu, biết thấu hiểu. Ưu điểm ăn nhiều nhưng không lên cân.",
+    "role": "Cô dâu",
+    "image": "couple/bride.jpg",
+    "position": "end",
+    "color": "pink",
+    "borderColor": "pink"
+  }
+]
