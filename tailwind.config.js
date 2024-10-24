@@ -17,6 +17,7 @@ export default {
       },
       width: {
         container: 'min(130ch, calc(100% - 2rem))',
+        'divider-sm': 'calc(100vw - 4px)',
         divider: 'calc(100vw - 1rem)',
         card: 'min(400px, calc(100% - 1rem))',
       }

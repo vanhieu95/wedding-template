@@ -1,6 +1,6 @@
 function ShapeDivider() {
   return (
-    <div className="w-divider absolute left-0 top-0 overflow-x-hidden leading-[0]">
+    <div className="w-divider-sm md:w-divider absolute left-0 top-0 overflow-x-hidden leading-[0]">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
