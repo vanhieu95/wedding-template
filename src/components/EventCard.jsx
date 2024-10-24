@@ -22,7 +22,7 @@ function EventCard({ imageUrl, title, date, time, place, location }) {
     >
       <CardActionArea>
         <CardContent>
-          <h3 className="font-shantell text-xl font-bold mb-4">{title}</h3>
+          <h3 className="mb-4 font-shantell text-xl font-bold">{title}</h3>
           <Stack
             direction={'row'}
             justifyContent={'space-between'}

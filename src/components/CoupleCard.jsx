@@ -14,12 +14,12 @@ function CoupleCard({
 
   return (
     <Box sx={{ textAlign: position }}>
-      <h3 className="font-shantell text-xl font-bold text-start mb-4">
+      <h3 className="mb-4 text-start font-shantell text-xl font-bold">
         {name}
       </h3>
       <Paper
         elevation={24}
-        className="p-4 max-w-md border-4 border-solid"
+        className="max-w-md border-4 border-solid p-4"
         square={false}
         sx={{ borderColor: color }}
       >

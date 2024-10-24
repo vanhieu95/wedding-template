@@ -4,7 +4,7 @@ function GiftItem({ role, bank, holder, number, branch }) {
   return (
     <Paper
       elevation={24}
-      className="text-center w-96 border-4 border-solid border-rose-300 p-4"
+      className="w-96 border-4 border-solid border-rose-300 p-4 text-center"
     >
       <h4 className="text-2xl font-bold">{`Mừng cưới đến ${role}`}</h4>
       <p>

@@ -7,6 +7,7 @@ function Gift() {
     <Stack
       direction={'row'}
       justifyContent={'space-evenly'}
+      gap={3}
       useFlexGap
       sx={{ flexWrap: 'wrap' }}
     >

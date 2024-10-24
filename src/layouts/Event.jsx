@@ -1,5 +1,5 @@
 import EventCard from '@/components/EventCard'
-import { Box, Stack } from '@mui/material'
+import { Box, Paper, Stack } from '@mui/material'
 import { stickyImageUrl, events } from '@data/events'
 import { getImageUrl } from '@/utils/imageHelper'
 
@@ -12,10 +12,11 @@ function Event() {
       alignItems={'start'}
       justifyContent={'space-between'}
     >
-      <Box
+      <Paper
+        elevation={24}
         sx={{
           width: '45%',
-          height: '400px',
+          height: '380px',
           display: {
             xs: 'none',
             md: 'block',
@@ -26,7 +27,7 @@ function Event() {
           position: 'sticky',
           top: 0,
         }}
-      ></Box>
+      ></Paper>
       <Box
         sx={{
           width: {
