@@ -85,6 +85,10 @@ function Navbar({ section, heroRef, sectionRef }) {
             sx={{
               flexGrow: 1,
               textAlign: { xs: 'center', sm: 'left' },
+              transform: {
+                xs: 'translateX(-20px)',
+                sm: 'translateX(0)',
+              },
               fontFamily: 'Shantell Sans',
             }}
           >
