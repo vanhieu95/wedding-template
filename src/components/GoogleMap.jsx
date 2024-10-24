@@ -8,7 +8,7 @@ function GoogleMap({ location }) {
         width="240"
         height="180"
         style={{ border: 0 }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />

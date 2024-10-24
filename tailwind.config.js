@@ -20,6 +20,9 @@ export default {
         'divider-sm': 'calc(100vw - 4px)',
         divider: 'calc(100vw - 1rem)',
         card: 'min(400px, calc(100% - 1rem))',
+      },
+      colors: {
+        'primary-200': '#fbcfe8',
       }
     },
   },

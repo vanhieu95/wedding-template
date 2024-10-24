@@ -1,11 +1,27 @@
-import PropTypes from 'prop-types'
+import Couple from '@/layouts/Couple'
+import Event from '@/layouts/Event'
+import Gift from '@/layouts/Gift'
 import { Favorite } from '@mui/icons-material'
 import ShapeDivider from '@/components/ShapeDivider'
 import { Box } from '@mui/material'
+import { forwardRef } from 'react'
 
-function Section({ title, children }) {
+const Section = forwardRef(function Section({ section: id, name: title }, ref) {
+  function renderChildren(section) {
+    switch (section) {
+      case 'couple':
+        return <Couple />
+      case 'event':
+        return <Event />
+      case 'gift':
+        return <Gift />
+      default:
+        break
+    }
+  }
+
   return (
-    <div className="relative mb-10">
+    <div id={id} className="relative mb-10" ref={ref}>
       <ShapeDivider />
 
       <Box className="mx-auto w-container pt-24 text-center">
@@ -15,15 +31,10 @@ function Section({ title, children }) {
           <Favorite className="absolute left-1/2 top-20 -ml-3" />
         </div>
 
-        {children}
+        {renderChildren(id)}
       </Box>
     </div>
   )
-}
-
-Section.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.node,
-}
+})
 
 export default Section

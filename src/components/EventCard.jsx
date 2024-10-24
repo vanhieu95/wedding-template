@@ -9,7 +9,7 @@ import {
   Chip,
   Stack,
 } from '@mui/material'
-import GoogleMap from './GoogleMap'
+import GoogleMap from '@/components/GoogleMap'
 
 function EventCard({ imageUrl, title, date, time, place, location }) {
   const image = getImageUrl(imageUrl)
