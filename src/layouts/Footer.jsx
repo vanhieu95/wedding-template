@@ -5,7 +5,7 @@ function Footer({ bride, groom }) {
   const heartUrl = getImageUrl('thank-you/heart.png')
 
   return (
-    <div className="relative h-[600px]">
+    <div className="relative mt-10 h-[600px]">
       <img
         className="absolute inset-0 h-[600px] w-full bg-center object-cover opacity-75"
         src={backgroundUrl}
@@ -18,21 +18,11 @@ function Footer({ bride, groom }) {
         alt="thank you"
         loading="lazy"
       />
-      <div className="absolute bottom-16 left-1/2 block w-full -translate-x-1/2 text-center text-xl text-white backdrop-blur-3xl">
-        <p className="mx-auto mb-2 w-container">
-          Sẽ thật sự hạnh phúc khi được gặp gỡ và đón mọi người trong ngày đặc
-          biệt này.
+      <div className="absolute bottom-16 left-1/2 block w-full -translate-x-1/2 text-center text-3xl backdrop-sepia md:text-4xl">
+        <p className="mx-auto mb-3 w-container font-shantell">{`${groom} - ${bride} `}</p>
+        <p className="mx-auto w-container font-shantell">
+          Xin trân trọng cảm ơn
         </p>
-        <p className="mx-auto mb-2 w-container">
-          Sự hiện diện của mọi người chính là niềm vui "là món quà lớn nhất,
-          giúp cho ngày trọng đại được trọn vẹn và ý nghĩa.
-        </p>
-        <p className="mx-auto mb-2 w-container">
-          {`${groom} - ${bride} cùng bố mẹ 2 bên gia đình chân thânh cảm ơn quý
-          ông quý bà, quý anh/chi/em, ban bè và đồng nghiệp vì dành tặng thời
-          gian quý báu, những lời chúc và tình cảm vô giá.`}
-        </p>
-        <p className="mx-auto mb-2 w-container">Trân trọng!</p>
       </div>
     </div>
   )
