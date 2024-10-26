@@ -10,6 +10,8 @@ import section from '@data/section'
 function Main() {
   const sectionRef = useRef([])
   const { sectionTitleSlideIn } = useScroll(sectionRef)
+  const groom = couple[0].shortName
+  const bride = couple[1].shortName
 
   useEffect(() => {
     sectionRef.current = sectionRef.current.slice(0, section.length)
@@ -21,7 +23,7 @@ function Main() {
         <Navbar section={section} sectionRef={sectionRef} />
       </header>
       <main>
-        <Hero groom={couple[0].shortName} bride={couple[1].shortName} />
+        <Hero groom={groom} bride={bride} />
         {section.map((item, i) => (
           <Section
             {...item}
@@ -32,7 +34,7 @@ function Main() {
         ))}
       </main>
       <footer>
-        <Footer />
+        <Footer groom={groom} bride={bride} />
       </footer>
     </>
   )
