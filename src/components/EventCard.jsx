@@ -7,77 +7,90 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Slide,
   Stack,
 } from '@mui/material'
 import GoogleMap from '@/components/GoogleMap'
 
-function EventCard({ imageUrl, title, date, time, place, location }) {
+function EventCard({
+  imageUrl,
+  title,
+  date,
+  time,
+  place,
+  location,
+  index,
+  slideIn,
+}) {
   const image = getImageUrl(imageUrl)
+  const currentSlideIn = slideIn != null ? slideIn[index] : false
 
   return (
-    <Card
-      sx={{
-        marginBottom: '2rem',
-      }}
-    >
-      <CardActionArea>
-        <CardContent>
-          <h3 className="mb-4 font-shantell text-xl font-bold">{title}</h3>
-          <Stack
-            direction={'row'}
-            justifyContent={'space-between'}
-            useFlexGap
-            sx={{
-              flexWrap: {
-                xs: 'wrap',
-                sm: 'no-wrap',
-              },
-              textAlign: 'center',
-            }}
-          >
-            <CardMedia
-              component="img"
-              image={image}
-              alt={title}
+    <Slide direction="left" in={currentSlideIn}>
+      <Card
+        sx={{
+          marginBottom: '2rem',
+        }}
+      >
+        <CardActionArea>
+          <CardContent>
+            <h3 className="mb-4 font-shantell text-xl font-bold">{title}</h3>
+            <Stack
+              direction={'row'}
+              justifyContent={'space-between'}
+              useFlexGap
               sx={{
-                width: {
-                  xs: '100%',
-                  sm: 'calc(50% - 1rem)',
+                flexWrap: {
+                  xs: 'wrap',
+                  sm: 'no-wrap',
                 },
-                marginBottom: '1rem',
-              }}
-            />
-            <Box
-              sx={{
-                width: {
-                  xs: '100%',
-                  sm: 'calc(50% - 1rem)',
-                },
+                textAlign: 'center',
               }}
             >
-              <Stack
-                direction={'row'}
-                spacing={4}
-                useFlexGap
-                sx={{ flexWrap: 'wrap' }}
-                justifyContent={'center'}
+              <CardMedia
+                component="img"
+                image={image}
+                alt={title}
+                sx={{
+                  width: {
+                    xs: '100%',
+                    sm: 'calc(50% - 1rem)',
+                  },
+                  marginBottom: '1rem',
+                }}
+              />
+              <Box
+                sx={{
+                  width: {
+                    xs: '100%',
+                    sm: 'calc(50% - 1rem)',
+                  },
+                }}
               >
-                <Chip
-                  icon={<CalendarMonth />}
-                  label={date}
-                  variant="outlined"
-                />
-                <Chip icon={<Alarm />} label={time} variant="outlined" />
-                <Chip icon={<Place />} label={place} variant="outlined" />
-                <Box>
-                  <GoogleMap location={location} />
-                </Box>
-              </Stack>
-            </Box>
-          </Stack>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+                <Stack
+                  direction={'row'}
+                  spacing={4}
+                  useFlexGap
+                  sx={{ flexWrap: 'wrap' }}
+                  justifyContent={'center'}
+                >
+                  <Chip
+                    icon={<CalendarMonth />}
+                    label={date}
+                    variant="outlined"
+                  />
+                  <Chip icon={<Alarm />} label={time} variant="outlined" />
+                  <Chip icon={<Place />} label={place} variant="outlined" />
+                  <Box>
+                    <GoogleMap location={location} />
+                  </Box>
+                </Stack>
+              </Box>
+            </Stack>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Slide>
   )
 }
 

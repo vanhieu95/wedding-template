@@ -11,11 +11,12 @@ import {
   Typography,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import useScroll from '@/hooks/useScroll'
 
-function Navbar({ section, heroRef, sectionRef }) {
+function Navbar({ section, sectionRef }) {
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [navbarColor, setNavbarColor] = useState('transparent')
+  const { navbarColor } = useScroll()
 
   const scrollIntoView = (ref, i) => {
     if (ref != null && ref.current != null && ref.current[i] != null) {
@@ -26,19 +27,6 @@ function Navbar({ section, heroRef, sectionRef }) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState)
   }
-
-  const changeNavbarColor = (heroRef) => {
-    window.scrollY >= heroRef.current.clientHeight
-      ? setNavbarColor('white')
-      : setNavbarColor('transparent')
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => changeNavbarColor(heroRef))
-    return () => {
-      window.removeEventListener('scroll', () => changeNavbarColor(heroRef))
-    }
-  })
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
