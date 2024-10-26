@@ -48,8 +48,8 @@ export default function useScroll(sectionRef) {
   function handleEventScroll() {
     const slideInList = {}
     let currentEventTopY =
-      heroRef.current.offsetHeight + coupleRef.current.offsetHeight
-    const eventHeight = 380
+      heroRef.current.offsetHeight + coupleRef.current.offsetHeight - 300
+    const eventHeight = Math.round(eventRef.current.offsetHeight / 4)
 
     events.forEach((event, i) => {
       if (i > 0) {
