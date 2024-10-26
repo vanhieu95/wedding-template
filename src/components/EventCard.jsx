@@ -58,6 +58,7 @@ function EventCard({
                   },
                   marginBottom: '1rem',
                 }}
+                loading="lazy"
               />
               <Box
                 sx={{

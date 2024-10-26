@@ -1,10 +1,11 @@
+import { useEffect, useRef } from 'react'
+import useScroll from '@/hooks/useScroll'
 import Navbar from '@/layouts/Navbar'
 import Hero from '@/layouts/Hero'
 import Section from '@/layouts/Section'
+import Footer from '@/layouts/Footer'
 import couple from '@data/couple'
 import section from '@data/section'
-import { useEffect, useRef } from 'react'
-import useScroll from '@/hooks/useScroll'
 
 function Main() {
   const sectionRef = useRef([])
@@ -30,6 +31,9 @@ function Main() {
           />
         ))}
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
