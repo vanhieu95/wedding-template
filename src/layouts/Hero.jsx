@@ -9,7 +9,7 @@ function Hero({ bride, groom }) {
       className="relative h-svh bg-hero-image bg-cover bg-fixed bg-center bg-no-repeat"
       ref={heroRef}
     >
-      <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 text-center text-primary-200 backdrop-sepia-[.25]">
+      <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 text-center backdrop-sepia-[.75]">
         <div className="h-52 py-24">
           <p className="mx-auto mb-2 font-shantell text-xl font-bold sm:text-2xl md:text-3xl">
             Save the date

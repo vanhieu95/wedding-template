@@ -2,6 +2,7 @@
   {
     "name": "Nguyễn Lương Trung Hiếu",
     "shortName": "Trung Hiếu",
+    "firstLetter": "H",
     "description": "Người con trai dễ thương, chăm chỉ. Ưu điểm là biết sợ vợ.",
     "role": "Chú rể",
     "image": "couple/groom.jpg",
@@ -12,6 +13,7 @@
   {
     "name": "Nguyễn Thị Thúy Vân",
     "shortName": "Thúy Vân",
+    "firstLetter": "V",
     "description": "Người phụ nữ hiền dịu, biết thấu hiểu. Ưu điểm ăn nhiều nhưng không lên cân.",
     "role": "Cô dâu",
     "image": "couple/bride.jpg",

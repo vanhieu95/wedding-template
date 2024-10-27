@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
 import useScroll from '@/hooks/useScroll'
 
-function Navbar({ section, sectionRef }) {
+function Navbar({ section, sectionRef, bride, groom }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const { navbarColor } = useScroll()
 
@@ -80,7 +80,7 @@ function Navbar({ section, sectionRef }) {
               fontFamily: 'Shantell Sans',
             }}
           >
-            H & V
+            {`${groom} & ${bride}`}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {section.map((item, i) => (
