@@ -6,11 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'opacity': 'opacity 1s ease'
+      },
       backgroundImage: {
         'hero-image': 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("assets/img/hero-image.jpg");',
       },
       backgroundSize: {
         '100%': '100%',
+      },
+      colors: {
+        'primary-200': '#fbcfe8',
       },
       fontFamily: {
         shantell: ['Shantell Sans', 'cursive', ],
@@ -21,9 +27,6 @@ export default {
         divider: 'calc(100vw - 1rem)',
         card: 'min(400px, calc(100% - 1rem))',
       },
-      colors: {
-        'primary-200': '#fbcfe8',
-      }
     },
   },
   plugins: [],

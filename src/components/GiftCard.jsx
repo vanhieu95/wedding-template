@@ -11,7 +11,7 @@ function GiftCard({ role, bank, holder, number, branch, position }) {
     >
       <Paper
         elevation={24}
-        className="w-96 border-4 border-solid border-rose-300 p-4 text-center"
+        className="animate-opacity w-96 border-4 border-solid border-rose-300 p-4 text-center hover:opacity-75"
       >
         <h4 className="text-2xl font-bold">{`Mừng cưới đến ${role}`}</h4>
         <p>

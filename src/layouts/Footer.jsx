@@ -6,7 +6,7 @@ function Footer({ bride, groom }) {
   return (
     <div className="relative mt-10 h-[600px]">
       <img
-        className="absolute inset-0 h-[600px] w-full bg-center object-cover opacity-75"
+        className="absolute inset-0 h-[600px] w-full bg-center object-cover opacity-90"
         src={backgroundUrl}
         alt="thank you"
         loading="lazy"

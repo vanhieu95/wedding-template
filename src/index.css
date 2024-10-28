@@ -127,3 +127,22 @@ select {
     font-family: "Roboto", system-ui, sans-serif;
   }
 }
+
+.couple-role {
+  display: none;
+}
+
+.couple-card:hover {
+  opacity: .85;
+  scale: .95;
+  animation: scale 1s ease-in-out;
+}
+
+.couple-card:hover img {
+  opacity: .5;
+  animation: opacity 1s ease-in-out;
+}
+
+.couple-card:hover .couple-role {
+  display: inline;
+}

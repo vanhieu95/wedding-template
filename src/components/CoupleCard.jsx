@@ -25,7 +25,7 @@ function CoupleCard({
         </h3>
         <Paper
           elevation={24}
-          className="max-w-md border-4 border-solid p-4"
+          className="couple-card max-w-md border-4 border-solid p-4"
           square={false}
           sx={{ borderColor: color }}
         >
@@ -34,12 +34,17 @@ function CoupleCard({
             spacing={2}
             alignItems={'center'}
           >
-            <Avatar
-              alt={role}
-              src={imageUrl}
-              sx={{ width: 180, height: 180, borderColor }}
-              className="border-4 border-double border-gray-700 shadow-md"
-            />
+            <div className="couple-avatar relative">
+              <div className="couple-role absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold">
+                {role}
+              </div>
+              <Avatar
+                alt={role}
+                src={imageUrl}
+                sx={{ width: 180, height: 180, borderColor }}
+                className="border-4 border-double border-gray-700 shadow-md"
+              />
+            </div>
             <div>{description}</div>
           </Stack>
         </Paper>
