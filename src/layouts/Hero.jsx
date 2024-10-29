@@ -12,7 +12,7 @@ function Hero({ bride, groom }) {
     <div id="hero" className="relative h-svh" ref={heroRef}>
       <LazyImage
         image={image}
-        className="h-svh w-full object-cover"
+        className="h-svh w-[100vw] object-cover"
         placeholderImage={imgPlaceHolderUrl}
       />
       <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 text-center backdrop-sepia-[.75]">
