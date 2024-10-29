@@ -1,14 +1,15 @@
+import LazyImage from '@/components/LazyImage'
 import { useRefContext } from '@/contexts/RefContext'
+import { getImageUrl } from '@/utils/imageHelper'
 
 function Hero({ bride, groom }) {
   const { heroRef } = useRefContext()
+  const imgUrl = getImageUrl('hero-image.jpg')
+  const image = { src: imgUrl, alt: `${groom} và ${bride}` }
 
   return (
-    <div
-      id="hero"
-      className="relative h-svh bg-hero-image bg-cover bg-fixed bg-center bg-no-repeat"
-      ref={heroRef}
-    >
+    <div id="hero" className="relative h-svh" ref={heroRef}>
+      <LazyImage image={image} className="h-svh w-full object-cover" />
       <div className="absolute bottom-0 left-1/2 w-full -translate-x-1/2 text-center backdrop-sepia-[.75]">
         <div className="h-52 py-24">
           <p className="mx-auto mb-2 font-shantell text-xl font-bold sm:text-2xl md:text-3xl">

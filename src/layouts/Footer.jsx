@@ -1,15 +1,15 @@
+import LazyImage from '@/components/LazyImage'
 import { getImageUrl } from '@/utils/imageHelper'
 
 function Footer({ bride, groom }) {
   const backgroundUrl = getImageUrl('thank-you/background.jpg')
+  const image = { src: backgroundUrl, alt: 'thank you' }
 
   return (
     <div className="relative mt-10 h-[600px]">
-      <img
+      <LazyImage
+        image={image}
         className="absolute inset-0 h-[600px] w-full bg-center object-cover opacity-90"
-        src={backgroundUrl}
-        alt="thank you"
-        loading="lazy"
       />
       <div className="absolute bottom-16 left-1/2 block w-full -translate-x-1/2 text-center text-3xl backdrop-sepia md:text-4xl">
         <p className="mx-auto mb-3 w-container font-shantell">{`${groom} - ${bride} `}</p>
